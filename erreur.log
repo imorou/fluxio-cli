@@ -1,0 +1,2 @@
+2026-06-30 16:45:12 CRITICAL [Storage] Fatal error: Could not missing or invalid permissions on data directory "/var/lib/postgresql/data".
+2026-06-30 16:45:12 ERROR [Main] Execution failed. Server shutting down. Emergency exit code 1.
