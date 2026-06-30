@@ -1,6 +1,5 @@
 # Fluxio-CLI — DevOps AI Assistant for Terminal 
 
-**Author:** Imorou TOURE (DevOps & Cloud Engineer)
 **Version:** 1.0.0
 **Status:** Deployment Validated
 
@@ -37,18 +36,23 @@ source venv/bin/activate
 # Install dependencies
 pip install openai python-dotenv
 
+```
+
 2. Secure Secrets Management
 
 Fluxio uses environment variables to securely manage API credentials.
 
 Create a .env file at the root of the project:
 
+```bash
 touch .env
 
 Add your OpenRouter API key inside:
 
+```env
 OPENROUTER_API_KEY=your_private_api_key_here
 
+```
  Important:
 The .env file must be excluded from Git tracking using .gitignore to prevent accidental exposure of sensitive credentials.
 
@@ -56,19 +60,24 @@ The .env file must be excluded from Git tracking using .gitignore to prevent acc
 
 To run Fluxio from anywhere in your Linux system, add a permanent alias to your shell configuration:
 
+```bash
 echo "alias fluxio='/home/sandda/fluxio-cli/venv/bin/python3 /home/sandda/fluxio-cli/main.py'" >> ~/.bashrc
 source ~/.bashrc
 
+```
 Now you can run Fluxio globally:
 
+```bash
 fluxio "Generate a Docker command to run PostgreSQL with persistent storage"
-
+```
 Usage
 
 Once installed, you can interact with Fluxio directly from your terminal:
 
+```bash
 fluxio "Write a Docker Compose file for PostgreSQL with persistent volume"
 
+```
 Example use cases:
 Generate Docker commands
 Write Terraform infrastructure
@@ -89,4 +98,13 @@ Kubernetes deep integration
 Cloud provider support (AWS / OCI / Azure)
 Interactive shell mode
 Autocompletion for DevOps commands
+
+---
+
+**Author:** Imorou TOURE (DevOps & Cloud Engineer)
+##  Professional Certifications
+
+- **[Oracle Cloud Infrastructure (OCI) Multicloud Architect Professional](https://drive.google.com/file/d/11EB7Y8uym9LAPtdWyshftYeTdYAxxuap/view?usp=drive_link)**
+- **[Oracle Cloud Infrastructure 2025 AI Foundations Associate](https://drive.google.com/file/d/1SMFyPhzabimOnQzK1D5Iu9aZb-HNGlrl/view?usp=drive_link)**
+
 
