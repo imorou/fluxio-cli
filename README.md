@@ -46,7 +46,7 @@ Create a .env file at the root of the project:
 
 ```bash
 touch .env
-
+```
 Add your OpenRouter API key inside:
 
 ```env
